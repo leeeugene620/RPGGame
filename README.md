@@ -13,3 +13,11 @@ Things to implement:
 - Inventory System
 - Merchant NPC (Buy/Sell Items)
 - Title Screen, Game Over Screen
+- Environment interaction (cutting trees, raft on ocean?)
+- Item Drop
+- In-game Menu
+- Advanced UI
+- New area (map transition)
+- Events (Boss fights, other on the road events)
+- Save/Load
+- Ending Screen
