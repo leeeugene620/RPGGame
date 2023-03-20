@@ -1,6 +1,7 @@
 package object;
 
 import main.GamePanel;
+import main.UtilityTool;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -15,6 +16,8 @@ public class SuperObject {
     public Rectangle hitBox = new Rectangle(0, 0, 48, 48);
     public int hitBoxDefaultX = 0;
     public int hitBoxDefaultY = 0;
+    // Method belows helps to optimize the image instantiation before drawing
+    UtilityTool utilityTool = new UtilityTool();
 
     public void draw(Graphics2D graphics2D, GamePanel gamePanel) {
         int screenX = worldX - gamePanel.player.worldX + gamePanel.player.screenX; // WorldX - Player.WorldX gives reference of the tile to the player so if player was at 500, 500 the tile would be -500, -500

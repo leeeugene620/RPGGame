@@ -153,7 +153,9 @@ public class GamePanel extends JPanel implements Runnable {
 
         // Debug
         long drawStart = 0;
-        drawStart = System.nanoTime();
+        if(keyHandler.checkDrawTime) {
+            drawStart = System.nanoTime();
+        }
 
         // Tiles
         tileManager.draw(graphics2D);
